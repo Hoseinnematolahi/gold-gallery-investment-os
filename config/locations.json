@@ -1,0 +1,40 @@
+{
+
+"locations":[
+
+
+{
+"city":"شیراز",
+
+"zones":[
+
+{
+
+"name":"بازار زرگرها",
+
+"type":"بازار سنتی",
+
+"coordinates":null,
+
+"footfall_score":null
+
+},
+
+
+{
+
+"name":"معالی آباد",
+
+"type":"مدرن",
+
+"coordinates":null
+
+}
+
+]
+
+}
+
+]
+
+}
