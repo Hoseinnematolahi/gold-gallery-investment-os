@@ -1,0 +1,43 @@
+{
+
+"minimal":
+{
+"name":"طلای مینیمال",
+"margin":0.18,
+"turnover":8,
+"default_share":40
+},
+
+"jewelry":
+{
+"name":"طلای زینتی",
+"margin":0.12,
+"turnover":5,
+"default_share":25
+},
+
+"used":
+{
+"name":"دست دوم",
+"margin":0.08,
+"turnover":10,
+"default_share":20
+},
+
+"parsian":
+{
+"name":"پارسیان",
+"margin":0.03,
+"turnover":15,
+"default_share":10
+},
+
+"coin":
+{
+"name":"سکه",
+"margin":0.02,
+"turnover":12,
+"default_share":5
+}
+
+}
