@@ -1,59 +1,356 @@
 {
+  "metadata": {
 
-"expense_categories":[
+    "version": "2.1",
 
+    "language": "fa",
 
-{
-"id":"property",
+    "currency": "تومان"
 
-"title":"ملک",
-
-"items":[
-
-"رهن",
-"اجاره",
-"شارژ"
-
-]
-
-},
+  },
 
 
-{
-"id":"utilities",
-
-"title":"قبوض",
-
-"items":[
-
-"آب",
-"برق",
-"گاز",
-"تلفن",
-"موبایل",
-"اینترنت"
-
-]
-
-},
+  "expense_groups": [
 
 
-{
-"id":"staff",
+    {
+      "id": "property",
 
-"title":"نیروی انسانی",
+      "title": "هزینه‌های ملک",
 
-"items":[
+      "items": [
 
-"حقوق مدیر",
-"حقوق فروشنده",
-"بیمه",
-"پورسانت"
 
-]
+        {
 
-}
+          "id": "deposit",
 
-]
+          "name": "رهن ملک",
+
+          "type": "capital",
+
+          "unit": "تومان",
+
+          "frequency": "one_time",
+
+          "editable": true
+
+        },
+
+
+        {
+
+          "id": "rent",
+
+          "name": "اجاره ماهانه",
+
+          "type": "operational",
+
+          "unit": "تومان",
+
+          "frequency": "monthly",
+
+          "editable": true
+
+        },
+
+
+        {
+
+          "id": "charge",
+
+          "name": "شارژ ساختمان",
+
+          "type": "operational",
+
+          "unit": "تومان",
+
+          "frequency": "monthly",
+
+          "editable": true
+
+        }
+
+      ]
+
+    },
+
+
+
+    {
+      "id": "utilities",
+
+      "title": "قبوض و ارتباطات",
+
+      "items": [
+
+        {
+
+          "id":"electricity",
+
+          "name":"برق",
+
+          "frequency":"monthly",
+
+          "unit":"تومان"
+
+        },
+
+
+        {
+
+          "id":"water",
+
+          "name":"آب",
+
+          "frequency":"monthly",
+
+          "unit":"تومان"
+
+        },
+
+
+        {
+
+          "id":"gas",
+
+          "name":"گاز",
+
+          "frequency":"monthly",
+
+          "unit":"تومان"
+
+        },
+
+
+        {
+
+          "id":"landline",
+
+          "name":"تلفن ثابت",
+
+          "frequency":"monthly",
+
+          "unit":"تومان"
+
+        },
+
+
+        {
+
+          "id":"mobile",
+
+          "name":"موبایل",
+
+          "frequency":"monthly",
+
+          "unit":"تومان"
+
+        },
+
+
+        {
+
+          "id":"internet",
+
+          "name":"اینترنت",
+
+          "frequency":"monthly",
+
+          "unit":"تومان"
+
+        }
+
+      ]
+
+    },
+
+
+
+    {
+      "id":"human_resource",
+
+      "title":"منابع انسانی",
+
+      "items":[
+
+
+        {
+
+        "id":"manager_salary",
+
+        "name":"حقوق مدیر",
+
+        "frequency":"monthly"
+
+        },
+
+
+        {
+
+        "id":"seller_salary",
+
+        "name":"حقوق فروشنده",
+
+        "frequency":"monthly"
+
+        },
+
+
+        {
+
+        "id":"insurance",
+
+        "name":"بیمه کارکنان",
+
+        "frequency":"monthly"
+
+        },
+
+
+        {
+
+        "id":"commission",
+
+        "name":"پورسانت فروش",
+
+        "frequency":"monthly"
+
+        }
+
+      ]
+
+    },
+
+
+
+    {
+      "id":"security",
+
+      "title":"امنیت",
+
+      "items":[
+
+
+        {
+
+        "id":"safe",
+
+        "name":"گاوصندوق",
+
+        "frequency":"one_time"
+
+        },
+
+
+        {
+
+        "id":"camera",
+
+        "name":"دوربین مداربسته",
+
+        "frequency":"one_time"
+
+        },
+
+
+        {
+
+        "id":"alarm",
+
+        "name":"سیستم امنیتی",
+
+        "frequency":"one_time"
+
+        }
+
+      ]
+
+    },
+
+
+
+    {
+      "id":"operation",
+
+      "title":"هزینه‌های جاری",
+
+      "items":[
+
+
+        {
+
+        "id":"accounting",
+
+        "name":"حسابداری",
+
+        "frequency":"monthly"
+
+        },
+
+
+        {
+
+        "id":"maintenance",
+
+        "name":"تعمیر و نگهداری",
+
+        "frequency":"monthly"
+
+        },
+
+
+        {
+
+        "id":"cleaning",
+
+        "name":"نظافت",
+
+        "frequency":"monthly"
+
+        }
+
+      ]
+
+    },
+
+
+
+    {
+      "id":"marketing",
+
+      "title":"بازاریابی",
+
+      "items":[
+
+
+        {
+
+        "id":"social_media",
+
+        "name":"مدیریت شبکه اجتماعی",
+
+        "frequency":"monthly"
+
+        },
+
+
+        {
+
+        "id":"local_ads",
+
+        "name":"تبلیغات محلی",
+
+        "frequency":"monthly"
+
+        }
+
+
+      ]
+
+    }
+
+
+  ]
 
 }
