@@ -1,0 +1,41 @@
+{
+ "cities":[
+
+  {
+   "id":"shiraz",
+   "name":"شیراز",
+   "province":"فارس",
+
+   "market_profile":{
+
+      "customer_power":null,
+      "competition":null,
+      "tourism":null,
+      "gold_culture":null
+
+   }
+
+  },
+
+  {
+   "id":"marvdasht",
+   "name":"مرودشت",
+   "province":"فارس"
+  },
+
+
+  {
+   "id":"arsanjan",
+   "name":"ارسنجان",
+   "province":"فارس"
+  },
+
+
+  {
+   "id":"ahvaz",
+   "name":"اهواز",
+   "province":"خوزستان"
+  }
+
+ ]
+}
