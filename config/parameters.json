@@ -1,0 +1,42 @@
+{
+  "parameters": [
+
+    {
+      "id": "total_capital",
+      "title": "سرمایه کل",
+      "category": "investment",
+      "type": "currency",
+      "unit": "تومان",
+      "editable": true
+    },
+
+    {
+      "id": "gold_inventory",
+      "title": "موجودی اولیه طلا",
+      "category": "inventory",
+      "type": "number",
+      "unit": "گرم",
+      "editable": true
+    },
+
+    {
+      "id": "store_area",
+      "title": "متراژ گالری",
+      "category": "store",
+      "type": "select",
+      "options": [
+        "کوچک",
+        "متوسط",
+        "بزرگ"
+      ]
+    },
+
+    {
+      "id": "monthly_rent",
+      "title": "اجاره ماهانه",
+      "category": "expense",
+      "type": "currency"
+    }
+
+  ]
+}
