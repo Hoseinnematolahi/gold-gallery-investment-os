@@ -1,43 +1,386 @@
 {
+  "metadata": {
+    "version": "2.1",
+    "language": "fa",
+    "currency": "تومان",
+    "weight_unit": "گرم",
+    "description": "Dynamic product catalog for Iranian gold retail investment analysis"
+  },
 
-"minimal":
-{
-"name":"طلای مینیمال",
-"margin":0.18,
-"turnover":8,
-"default_share":40
-},
+  "product_categories": [
 
-"jewelry":
-{
-"name":"طلای زینتی",
-"margin":0.12,
-"turnover":5,
-"default_share":25
-},
+    {
+      "id": "new_jewelry",
+      "name": "طلای نو زینتی",
+      "category_type": "jewelry",
 
-"used":
-{
-"name":"دست دوم",
-"margin":0.08,
-"turnover":10,
-"default_share":20
-},
+      "description": "مصنوعات طلای جدید با اجرت ساخت",
 
-"parsian":
-{
-"name":"پارسیان",
-"margin":0.03,
-"turnover":15,
-"default_share":10
-},
+      "sub_categories": [
+        "گردنبند",
+        "دستبند",
+        "انگشتر",
+        "گوشواره",
+        "النگو",
+        "نیم ست",
+        "ست کامل",
+        "پلاک",
+        "آویز"
+      ],
 
-"coin":
-{
-"name":"سکه",
-"margin":0.02,
-"turnover":12,
-"default_share":5
-}
+      "weight_profile": {
+        "min_gram": 1,
+        "max_gram": 1000
+      },
 
+      "target_customers": [
+        "خریدار مصرفی",
+        "خریدار هدیه",
+        "مناسبت‌ها"
+      ],
+
+      "business_role": [
+        "افزایش فروش",
+        "افزایش حاشیه سود",
+        "جذب مشتری"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "profit_generator"
+    },
+
+
+    {
+      "id": "minimal_jewelry",
+      "name": "طلای مینیمال",
+
+      "category_type": "fast_rotation",
+
+      "description": "طلای سبک و اقتصادی مناسب خرید روزمره و هدیه",
+
+      "sub_categories": [
+        "انگشتر ظریف",
+        "پلاک کوچک",
+        "زنجیر سبک",
+        "دستبند ظریف",
+        "گوشواره کوچک"
+      ],
+
+      "weight_profile": {
+        "min_gram": 0.5,
+        "max_gram": 15
+      },
+
+      "target_customers": [
+        "جوانان",
+        "خریدار اول",
+        "هدیه"
+      ],
+
+      "business_role": [
+        "گردش سریع سرمایه",
+        "افزایش تعداد تراکنش"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "cash_flow_driver"
+    },
+
+
+    {
+      "id": "luxury_jewelry",
+
+      "name": "طلای لوکس و سنگین",
+
+      "category_type": "premium",
+
+      "sub_categories": [
+        "ست سنگین",
+        "گردنبند خاص",
+        "النگوی سنگین",
+        "کار سفارشی"
+      ],
+
+      "weight_profile": {
+        "min_gram": 30,
+        "max_gram": 2000
+      },
+
+      "target_customers": [
+        "مشتریان ویژه",
+        "قدرت خرید بالا"
+      ],
+
+      "business_role": [
+        "برندسازی",
+        "فروش ارزش بالا"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "premium_value"
+    },
+
+
+    {
+      "id": "used_gold",
+
+      "name": "طلای دست دوم",
+
+      "category_type": "investment",
+
+      "description": "طلای بدون اجرت یا کم اجرت",
+
+      "sub_categories": [
+        "طلای بدون اجرت",
+        "طلای کم اجرت",
+        "مصنوعات کارکرده"
+      ],
+
+      "target_customers": [
+        "سرمایه‌گذار",
+        "خریدار اقتصادی"
+      ],
+
+      "business_role": [
+        "حفظ سرمایه",
+        "گردش نقدینگی"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "investment_anchor"
+    },
+
+
+    {
+      "id": "melted_gold",
+
+      "name": "طلای آبشده",
+
+      "category_type": "investment",
+
+      "sub_categories": [
+        "آبشده استاندارد",
+        "آبشده عیار ۱۸",
+        "شمش کوچک"
+      ],
+
+      "target_customers": [
+        "سرمایه‌گذار"
+      ],
+
+      "business_role": [
+        "حفظ ارزش سرمایه"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "wealth_preservation"
+    },
+
+
+    {
+      "id": "coin",
+
+      "name": "سکه طلا",
+
+      "category_type": "investment",
+
+      "sub_categories": [
+        "تمام سکه",
+        "نیم سکه",
+        "ربع سکه",
+        "سکه گرمی"
+      ],
+
+      "target_customers": [
+        "سرمایه‌گذار",
+        "هدیه"
+      ],
+
+      "business_role": [
+        "نقدشوندگی",
+        "جذب سرمایه"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "liquidity_reserve"
+    },
+
+
+    {
+      "id": "parsian_gold",
+
+      "name": "طلای پارسیان",
+
+      "category_type": "micro_investment",
+
+      "sub_categories": [
+        "۵۰ سوت",
+        "۱۰۰ سوت",
+        "۲۰۰ سوت",
+        "۵۰۰ سوت",
+        "۱ گرم"
+      ],
+
+      "target_customers": [
+        "سرمایه کم",
+        "هدیه",
+        "خریدار جدید"
+      ],
+
+      "business_role": [
+        "ورود مشتری",
+        "فروش سریع"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "customer_acquisition"
+    },
+
+
+    {
+      "id": "gold_bar",
+
+      "name": "شمش طلا",
+
+      "category_type": "investment",
+
+      "sub_categories": [
+        "۱ گرم",
+        "۲.۵ گرم",
+        "۵ گرم",
+        "۱۰ گرم",
+        "۲۰ گرم",
+        "۵۰ گرم",
+        "۱۰۰ گرم"
+      ],
+
+      "target_customers": [
+        "سرمایه‌گذار"
+      ],
+
+      "business_role": [
+        "سرمایه‌گذاری"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "investment_product"
+    },
+
+
+    {
+      "id": "custom_jewelry",
+
+      "name": "طلای سفارشی",
+
+      "category_type": "service",
+
+      "sub_categories": [
+        "طراحی اختصاصی",
+        "ساخت سفارشی"
+      ],
+
+      "business_role": [
+        "وفادارسازی",
+        "سود بالا"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "service_revenue"
+    },
+
+
+    {
+      "id": "gemstone_jewelry",
+
+      "name": "جواهرات و مصنوعات سنگ‌دار",
+
+      "category_type": "luxury",
+
+      "sub_categories": [
+        "الماس",
+        "برلیان",
+        "سنگ قیمتی",
+        "نگین‌دار"
+      ],
+
+      "business_role": [
+        "بازار لوکس",
+        "افزایش ارزش برند"
+      ],
+
+      "financial_attributes": {
+        "liquidity_score": null,
+        "margin_score": null,
+        "capital_lock_score": null,
+        "rotation_score": null,
+        "risk_score": null
+      },
+
+      "inventory_role": "brand_builder"
+    }
+
+  ]
 }
