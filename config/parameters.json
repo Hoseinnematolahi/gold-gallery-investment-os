@@ -1,42 +1,162 @@
 {
-  "parameters": [
+  "metadata": {
+    "version": "2.1",
+    "language": "fa",
+    "direction": "rtl"
+  },
+
+
+  "parameter_groups": [
+
 
     {
-      "id": "total_capital",
-      "title": "سرمایه کل",
-      "category": "investment",
-      "type": "currency",
-      "unit": "تومان",
-      "editable": true
-    },
+      "id": "investment",
+      "title": "اطلاعات سرمایه‌گذاری",
 
-    {
-      "id": "gold_inventory",
-      "title": "موجودی اولیه طلا",
-      "category": "inventory",
-      "type": "number",
-      "unit": "گرم",
-      "editable": true
-    },
+      "parameters": [
 
-    {
-      "id": "store_area",
-      "title": "متراژ گالری",
-      "category": "store",
-      "type": "select",
-      "options": [
-        "کوچک",
-        "متوسط",
-        "بزرگ"
+        {
+          "id": "total_capital",
+          "label": "کل سرمایه قابل تخصیص",
+
+          "type": "number",
+
+          "unit": "تومان",
+
+          "required": true,
+
+          "min": 0,
+
+          "format": "currency"
+        },
+
+
+        {
+          "id": "gold_inventory",
+          "label": "موجودی اولیه طلا",
+
+          "type": "number",
+
+          "unit": "گرم",
+
+          "required": true,
+
+          "min": 0
+        },
+
+
+        {
+          "id": "cash_reserve",
+
+          "label": "ذخیره نقدینگی",
+
+          "type": "number",
+
+          "unit": "تومان",
+
+          "required": true
+        }
+
       ]
+
     },
 
+
     {
-      "id": "monthly_rent",
-      "title": "اجاره ماهانه",
-      "category": "expense",
-      "type": "currency"
+      "id": "location",
+
+      "title": "اطلاعات موقعیت",
+
+      "parameters": [
+
+
+        {
+          "id": "city",
+
+          "label": "شهر",
+
+          "type": "select",
+
+          "source": "cities.json",
+
+          "required": true
+
+        },
+
+
+        {
+          "id": "market_zone",
+
+          "label": "محدوده بازار",
+
+          "type": "select",
+
+          "source": "locations.json",
+
+          "dependency": "city"
+
+        }
+
+      ]
+
+    },
+
+
+    {
+      "id": "store",
+
+      "title": "مشخصات گالری",
+
+      "parameters": [
+
+        {
+
+          "id": "store_size",
+
+          "label": "متراژ گالری",
+
+          "type": "select",
+
+          "options": [
+
+            {
+              "label":"کوچک (۲۰ تا ۳۵ متر)",
+              "value":"small"
+            },
+
+
+            {
+              "label":"متوسط (۳۵ تا ۷۰ متر)",
+              "value":"medium"
+            },
+
+
+            {
+              "label":"بزرگ (۷۰ متر به بالا)",
+              "value":"large"
+            }
+
+          ]
+
+        },
+
+
+        {
+
+          "id":"employees",
+
+          "label":"تعداد پرسنل",
+
+          "type":"number",
+
+          "min":1
+
+        }
+
+      ]
+
     }
 
   ]
+
 }
